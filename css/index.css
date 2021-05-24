@@ -110,7 +110,7 @@
             /* background-color: blueviolet; */
             margin: 0px auto;
         }
-        
+
         nav .box1 .applyfor {
             width: 320px;
             height: 210px;
@@ -136,17 +136,25 @@
         
         nav .box1 .applyfor ul {
             float: right;
-            margin: 25px 0px;
+            margin: 25px 0;
         }
-        
+        /*#ul li{*/
+
+
+
+        /*}*/
         nav .box1 .applyfor ul li {
             float: left;
-            background-color: rgba(255, 255, 255, .6);
+            background-color: rgba(255, 255, 255, .2);
             margin-left: 15px;
+            padding: 6px 10px;
+            font-size: 16px;
+             border-radius: 5px;
         }
         
         nav .box1 .applyfor p {
             float: right;
+            font-size: 18px;
         }
         
         nav .box1 .applyfor button {
