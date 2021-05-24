@@ -82,3 +82,36 @@ $('#jiazai>a').click(function(){
     $('#jiazai>a').text('正在加载中');
 })
 
+let a = 0;
+let kk;
+ff();
+
+function ff() {
+    kk = setInterval(function() {
+        a++;
+        if (a > 2) {
+            a = 0;
+        }
+
+        $('.lun').css('left', a * -1000 + 'px');
+    }, 1500)}
+    $('.arrows2').click(function() {
+        clearInterval(kk);
+        a--;
+        if (a < 0) {
+            a = 2;
+        }
+        $('.lun').css('left', a * -1000 + 'px');
+
+        ff();
+    })
+    $('.arrows1').click(function() {
+        clearInterval(kk);
+        a++;
+        if (a > 2) {
+            a = 0;
+        }
+        $('.lun').css('left', a * -1000 + 'px');
+
+        ff();
+    })

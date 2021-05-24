@@ -153,6 +153,108 @@ nav .box1 .applyfor button {
     color: rgb(255, 255, 255);
     font-weight: 500;
 }
+/* 轮播图部分 */
+article {
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+article .box3 {
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+}
+
+article .box3 .arrows1 {
+    position: absolute;
+    right: 130px;
+    top: 180px;
+}
+
+article .box3 .arrows2 {
+    position: absolute;
+    left: 130px;
+    top: 180px;
+}
+article .remen {
+    width: 1000px;
+    height: 380px;
+    position: relative;
+    /* background-color: chartreuse; */
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+article .gongyong h3 {
+    height: 65px;
+    line-height: 65px;
+    /* background-color: cornsilk; */
+}
+
+article .gongyong ul li {
+    box-sizing: border-box;
+    width: 220px;
+    float: left;
+    margin-right: 40px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+.remen1{
+    width: 1000px;
+    height: 285px;
+    margin: 0 auto;
+    float: left;
+}
+article .remen1 li {
+    height: 285px;
+    text-align: center;
+}
+
+article .gongyong ul li:last-child {
+    margin: 0px;
+}
+
+article .gongyong ul li img {
+    width: 218px;
+    border-radius: 5px;
+}
+
+article .gongyong ul li h4 {
+    margin: 5px;
+    color: #222;
+}
+
+article .gongyong ul li span {
+    display: inline-block;
+    color: #fe5341;
+    border: 1px solid #fe5341;
+    border-radius: 5px;
+    padding: 2px 4px;
+    margin: 5px;
+}
+
+article .gongyong ul li p span {
+    border: none;
+}
+
+article .gongyong ul li p {
+    color: #222;
+    margin: 0px 5px;
+}
+
+article .gongyong ul li .p1 {
+    color: #fe5341;
+}
+.lun{
+    width: 3100px;
+    height: 286px;
+    float: left;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s;
+    /* background-color: tomato; */
+}        
 /* 报告精选 */
 .bod {
     width: 100%;
