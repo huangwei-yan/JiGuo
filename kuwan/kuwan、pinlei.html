@@ -21,8 +21,8 @@
                         <a href="">
                             <img src="../img/logonew.png" alt=""></a>
                     </li>
-                    <li class="main"> <a href="../index.html">首页</a> </li>
-                    <li> <a href="./kuwan、zuixin.html">酷玩</a> </li>
+                    <li> <a href="../index.html">首页</a> </li>
+                    <li class="main"> <a href="./kuwan、zuixin.html">酷玩</a> </li>
                     <li> <a href="">导航</a> </li>
                     <li> <a href="">试用</a> </li>
                     <li> <a href="">报告</a> </li>
@@ -275,4 +275,12 @@
         <p>&copy2016极果版权所有</p>
     </footer>
 </body>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>
+    $('#jiazai>a').click(function(){
+    $('#jiazai>img').attr('src',"../img/loading-icon.gif");
+    $('#jiazai>img').css('margin-bottom','50px');
+    $('#jiazai>a').text('正在加载中');
+})
+</script>
 </html>
