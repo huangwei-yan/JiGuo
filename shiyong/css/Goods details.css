@@ -92,11 +92,15 @@ nav .box1 .applyfor ul {
 }
 nav .box1 .applyfor ul li {
   float: left;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
   margin-left: 15px;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 5px;
 }
 nav .box1 .applyfor p {
   float: right;
+  font-size: 18px;
 }
 nav .box1 .applyfor button {
   float: right;
