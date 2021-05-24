@@ -39,7 +39,7 @@
 
      $('.goods').css('height', '980px');
 
-     $('.loading').html('点击看查更多').css('color', 'red');
+     $('.loading').html('<img src="../img/more.png" alt="">点击看查更多').css('color', 'red');
 
 
      setTimeout(function() {
@@ -219,4 +219,8 @@
          })
 
      }, 1000);
+ })
+
+ $('.loading').click(function() {
+     $(this).html('<img src="../img/loading-icon.gif" alt="">正在加载更多');
  })
