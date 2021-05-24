@@ -200,11 +200,15 @@ article .gongyong ul li {
     border: 1px solid #999999;
     border-radius: 5px;
 }
+article .gongyong ul li:nth-child(4){
+    margin-right: 0px;
+}
 .remen1{
     width: 1000px;
     height: 285px;
     margin: 0 auto;
     float: left;
+    overflow: hidden;
 }
 article .remen1 li {
     height: 285px;
