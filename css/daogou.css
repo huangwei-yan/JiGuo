@@ -74,6 +74,14 @@
     text-align: center;
 }
 
+#zc:hover {
+    background-color: #fa553f;
+}
+
+#zc:hover>a {
+    color: white;
+}
+
 
 /* 导购清单导航部分 */
 

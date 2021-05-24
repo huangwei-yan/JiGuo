@@ -1,9 +1,19 @@
 $(function() {
     $('#jiazai>a').click(function() {
-        $('#jiazai>img').attr('src', "../img/loading-icon.gif");
-        $('#jiazai>img').css('margin-bottom', '-5px');
-        $('#jiazai>a').text('正在加载中');
-    })
+            $('#jiazai>img').attr('src', "../img/loading-icon.gif");
+            $('#jiazai>img').css('margin-bottom', '-5px');
+            $('#jiazai>a').text('正在加载中');
+        })
+        // $('#zc').on({
+        //     mouseenter: function() {
+        //         $(this).css('background', '#fa553f');
+        //         $('#zc>a').css('color', 'white');
+        //     },
+        //     mouseleave: function() {
+        //         $(this).css('background', 'white');
+        //         $('#zc>a').css('color', '#fa553f');
+        //     }
+        // })
     $('#dg-xin').on({
         mouseenter: function() {
             $('#dg-xin>img').attr('src', '../img/xinRedh.png');
