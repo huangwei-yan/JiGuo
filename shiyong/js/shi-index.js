@@ -39,7 +39,7 @@
 
      $('.goods').css('height', '980px');
 
-     $('.loading').html('点击看查更多').css('color', 'red');
+     $('.loading').html('<img src="../img/more.png" alt="">点击看查更多').css('color', 'red');
 
 
      setTimeout(function() {
@@ -51,7 +51,7 @@
              }
          })
 
-     }, 500);
+     }, 1000);
  })
 
  $('#drawing-1').click(function() {
@@ -63,6 +63,7 @@
      $('#apply-3').css('color', '#000').siblings().css('color', '#a3a3a3');
 
      $('.goods').css('height', '1297px');
+     $('.loading').html('<img src="../img/more.png" alt=""> 点击看查更多').css('color', 'red');
 
      setTimeout(function() {
          $('.Com-4').each(function() {
@@ -73,7 +74,7 @@
              }
          })
 
-     }, 500);
+     }, 1000);
  })
  $('#apply-3').click(function() {
      ff();
@@ -81,7 +82,7 @@
 
      $('.goods').css('height', '1297px');
 
-     $('.loading').html('点击看查更多').css('color', 'red');
+     $('.loading').html('<img src="../img/more.png" alt=""> 点击看查更多').css('color', 'red');
      setTimeout(function() {
          $('.Com-4').each(function() {
              let b = $(this).html();
@@ -91,7 +92,7 @@
              }
          })
 
-     }, 500);
+     }, 1000);
  })
 
  //
@@ -104,7 +105,7 @@
          }
      })
 
- }, 500);
+ }, 1000);
 
  //  申请
  $('#apply').click(function() {
@@ -140,7 +141,7 @@
              }
          })
 
-     }, 500);
+     }, 1000);
  })
 
  //  试用
@@ -181,7 +182,7 @@
              }
          })
 
-     }, 500);
+     }, 1000);
 
  })
 
@@ -217,5 +218,9 @@
              }
          })
 
-     }, 500);
+     }, 1000);
+ })
+
+ $('.loading').click(function() {
+     $(this).html('<img src="../img/loading-icon.gif" alt="">正在加载更多');
  })
