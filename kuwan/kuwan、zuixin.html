@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dg-hot</title>
-    <link rel="stylesheet" href="../css/daogou.css">
-    <link rel="stylesheet" href="../daogo/初始化.css">
+    <title>发现酷玩-最新</title>
+    <link rel="stylesheet" href="../css/kuwan、zuixin.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <div class="box">
-        <!-- 头部导航栏 -->
+        <!-- 头 -->
         <header>
 
             <div>
@@ -21,59 +21,62 @@
                         <a href="">
                             <img src="../img/logonew.png" alt=""></a>
                     </li>
-                    <li> <a href="../index.html">首页</a> </li>
-                    <li> <a href="../kuwan/kuwan、zuixin.html">酷玩</a> </li>
-                    <li class="main"> <a href="../daogo/daogou.html">导航</a> </li>
+                    <li class="main"> <a href="../index.html">首页</a> </li>
+                    <li> <a href="">酷玩</a> </li>
+                    <li> <a href="">导航</a> </li>
                     <li> <a href="">试用</a> </li>
-                    <li> <a href="../baogao/baogao-new.html">报告</a> </li>
+                    <li> <a href="">报告</a> </li>
                 </ul>
                 <ul class="seek">
                     <li><img src="../img/search.png" alt=""></li>
-                    <li> <a href="">注册</a> </li>
+                    <li> <a href="../zhuce.html">注册</a> </li>
                 </ul>
             </div>
         </header>
     </div>
-    <!-- 导购导航栏 -->
-    <div>
-        <div class="daogou">
-            <h1>购物清单</h1>
-            <ul class="dg-nav">
-                <li>
-                    <a href="../daogo/daogou-new.html">最新</a>
-                </li>
-                <li class="nav"><a href="../daogo/daogou-hot.html">最热</a></li>
-            </ul>
-        </div>
-        <!-- 导购内容 -->
-        <div class="dg-new">
-            <ul class="dg-con">
+    <div class="daogou">
+        <h1>发现酷玩</h1>
+        <ul class="dg-nav">
+            <li class="nav">
+                <a href="./kuwan、zuixin.html">最新</a>
+            </li>
+            <li>
+                <a href="./kuwan、zuire.html">最热</a>
+            </li>
+            <li>
+                <a href="">品类</a>
+            </li>
+        </ul>
+    </div>
+    <div class="bod faxiankw">
+        <div class="bod1">
+            <ul id="lis3">
                 <!-- <li>
                     <a href="">
-                        <img src="../img/bg3.jpg" alt="">
-                        <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-                        <div>
-                            <span>3</span>
-                            <span>3</span>
+                        <img src="../img/re1.jpg" alt=""></a>
+                    <div class="info">
+                        <p>空气净化器里面学问多得惊杲你，你选对了吗?</p>
+                        <div class="info1">
+                            <span>● 苏苏</span>
+                            <span class="look">3</span>
+                            <span class="zan">3</span>
                         </div>
-                        <div class="dg-fix"></div>
-                    </a>
-                </li> -->
+                    </div> -->
+            </ul>
+            <ul id="lis4">
             </ul>
         </div>
-        <div class="dg-hot"></div>
     </div>
-    <!-- 点击加载 -->
     <div id="jiazai">
         <img src="../img/more.png" alt="">
         <!-- <img src="./img/loading-icon.gif" alt=""> -->
         <a href="javaScript:;">点击加载更多</a>
     </div>
-    <!-- 底部 -->
+    <!-- 尾 -->
     <footer>
         <div class="footer">
             <div class="qr footer1">
-                <img src="../img/code.png" alt="">
+                <img src="../img/qr.png" alt="">
             </div>
             <div class="logou footer1">
                 <h4><img src="../img/logoImg.jpg" alt=""></h4>
@@ -137,23 +140,41 @@
         <p>&copy2016极果版权所有</p>
     </footer>
 </body>
-<script src="../js/jquery-3.6.0.min.js"></script>
-<script src="../js/daogou.js"></script>
+<script src="../js/kuwan、zuixin.js"></script>
 <script src="../js/doT.min.js"></script>
-<script id="gd-new" type="text/x-dot-template">
+<script id="xls2" type="text/x-dot-template">
     {{~it:value:index}}
     <li>
-        <a href="../daogo/daogou-li.html">
-            <img src="{{=value.img}}">
-            <p>{{=value.text}}</p>
-            <div>
-                <span>{{=value.like}}</span>
-                <span>{{=value.words}}</span>
-            </div>
-            <div class="dg-fix"></div>
+        <a href="">
+            <img src="{{=value.img}}" alt="">
         </a>
+        <div class="info">
+            <p>{{=value.text}}</p>
+        <div class="info1">
+            <span class="red">{{=value.price}}</span>
+            <span class="zan">3</span>
+            <span class="look">3</span>
+        </div>
+    </div>
     </li>
     {{~}}
-</script>
+    </script>
+<script id="xls3" type="text/x-dot-template">
+        {{~it:value:index}}
+        <li>
+            <a href="">
+                <img src="{{=value.img}}" alt="">
+            </a>
+            <div class="info">
+                <p>{{=value.text}}</p>
+            <div class="info1">
+                <span class="red">{{=value.price}}</span>
+                <span class="zan">3</span>
+                <span class="look">3</span>
+            </div>
+        </div>
+        </li>
+        {{~}}
+        </script>
 
 </html>

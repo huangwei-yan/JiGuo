@@ -1,0 +1,256 @@
+ /* 页面公用样式 */
+
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1366px;
+    height: 100%;
+    min-width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+
+/* 页面公用样式 */
+
+
+/* 顶部导航栏部分 */
+
+.box {
+  width: 100%;
+  height: 75px;
+  box-shadow: 0 0 5px #cecfcf inset;
+  border-bottom: 0.8px solid #cecfcf;
+}
+.box header {
+  width: 1000px;
+  height: 75px;
+  margin: 0 auto;
+  line-height: 75px;
+  font-size: 18px;
+}
+.box header div .AppBar li {
+  float: left;
+  margin-right: 50px;
+}
+.box header div .AppBar .main a {
+  color: red;
+}
+.box header div .AppBar li a {
+  color: #262b27;
+}
+.box header div .AppBar li a:hover {
+  color: red;
+}
+.box header div .AppBar li img {
+  width: 135px;
+  margin: 10px 0px;
+}
+.box header div .seek {
+  float: right;
+}
+.box header div .seek a {
+  color: #fa553f;
+}
+.box header div .seek li {
+  float: left;
+  margin-left: 30px;
+}
+.box header div .seek li img {
+  margin: 20px 0px;
+}
+.box header div .seek li img:hover {
+  transform: scale(1.2);
+}
+.box header div .seek li:last-child {
+  width: 50px;
+  height: 30px;
+  border: 1px solid #fa553f;
+  border-radius: 5px;
+  margin-top: 22px;
+  line-height: 30px;
+  text-align: center;
+}
+/* 身体 */
+nav{
+    width: 100%;
+    height: 800px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    padding-top: 25px;
+}
+nav .box3{
+    width: 1000px;
+    height: 750px;
+    background-color: white;
+    border: 1px #d7d7d7 solid;
+    border-radius: 15px;
+    margin: 0px auto;
+}
+nav .box3 h2{
+    margin-top:25px;
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    border-left: 10px solid #fe5341;
+    /* padding-left: 30px; */
+}
+nav .box3 .field{
+    width: 400px;
+    height: 500px;
+    /* background-color: violet; */
+    margin: 70px auto;
+    box-sizing: border-box;
+}
+nav .box3 .field p{
+    margin-bottom: 25px;
+}
+nav .box3 .field input{
+    width: 100%;
+    height: 50px;
+    background-color: #f7f7f7;
+    color: #a3a3a3;
+    border: 1px #eee solid;
+    border-radius:10px;
+    font-size: 16px;
+    text-indent: 15px;
+}
+nav .box3 .field .duan{
+    width: 55%;
+}
+nav .box3 .field img{
+    padding: 0px 0px 6px 25px;
+}
+nav .box3 .field .yanzhengma{
+    width: 130px;
+    height: 50px;
+    color: #a3a3a3;
+    border: 1px #a3a3a3 solid;
+    border-radius: 8px;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 25px;
+}
+nav .box3 .field #sum{
+    background-color: #fe5341;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    color:rgb(255, 255, 255);
+}
+ /* 尾部 */
+ footer {
+    width: 100%;
+    height: 360px;
+    background-color: #505050;
+    margin: 0px auto;
+    position: relative;
+}
+
+footer .footer {
+    width: 1000px;
+    height: 100%;
+    margin: 0px auto;
+    font-size: 15px;
+    /* background-color: cyan; */
+}
+
+footer .footer .footer1 {
+    float: left;
+    margin-top: 40px;
+    color: #a39e90;
+    box-sizing: border-box;
+}
+
+footer .footer .footer1 h4 a {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+
+footer .footer .logou {
+    width: 135px;
+    /* background-color: darkgoldenrod; */
+}
+
+footer .footer .footer1 ul {
+    margin-top: 30px;
+}
+
+footer .footer .logou li {
+    margin-bottom: 20px;
+}
+
+footer .footer .footer2 {
+    width: 100px;
+    /* background-color: darkkhaki; */
+}
+
+footer .footer2 ul li {
+    margin-bottom: 5px;
+}
+
+footer .footer .footer3 {
+    width: 160px;
+    /* background: brown; */
+}
+
+footer .footer .footer3 ul {
+    float: left;
+}
+
+footer .footer .footer3 ul:last-child {
+    margin-left: 15px;
+}
+
+footer .footer .footer1 {
+    margin-right: 18px;
+}
+
+footer .footer div:last-child {
+    margin-right: 0px;
+}
+
+footer .footer a {
+    color: rgb(184, 174, 174);
+}
+
+footer .jiantou {
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: #e8e8e8;
+    position: absolute;
+    bottom: 60px;
+    right: 120px;
+}
+
+footer .jiantou img {
+    margin: 14px 11px;
+}
+
+footer p {
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    color: rgb(184, 174, 174);
+    font-size: 15px;
+}

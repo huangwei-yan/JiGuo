@@ -3,16 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dg-hot</title>
-    <link rel="stylesheet" href="../css/daogou.css">
-    <link rel="stylesheet" href="../daogo/初始化.css">
+    <title>试用大众试用</title>
 </head>
+<link rel="stylesheet" href="./css/初始化.css">
+<link rel="stylesheet" href="./css/shi-index.css">
 
 <body>
     <div class="box">
-        <!-- 头部导航栏 -->
+        <!-- 头 -->
         <header>
 
             <div>
@@ -21,11 +19,11 @@
                         <a href="">
                             <img src="../img/logonew.png" alt=""></a>
                     </li>
-                    <li> <a href="../index.html">首页</a> </li>
-                    <li> <a href="../kuwan/kuwan、zuixin.html">酷玩</a> </li>
-                    <li class="main"> <a href="../daogo/daogou.html">导航</a> </li>
-                    <li> <a href="">试用</a> </li>
-                    <li> <a href="../baogao/baogao-new.html">报告</a> </li>
+                    <li> <a href="">首页</a> </li>
+                    <li> <a href="">酷玩</a> </li>
+                    <li> <a href="">导航</a> </li>
+                    <li class="main"> <a href="">试用</a> </li>
+                    <li> <a href="">报告</a> </li>
                 </ul>
                 <ul class="seek">
                     <li><img src="../img/search.png" alt=""></li>
@@ -34,42 +32,51 @@
             </div>
         </header>
     </div>
-    <!-- 导购导航栏 -->
-    <div>
-        <div class="daogou">
-            <h1>购物清单</h1>
-            <ul class="dg-nav">
-                <li>
-                    <a href="../daogo/daogou-new.html">最新</a>
-                </li>
-                <li class="nav"><a href="../daogo/daogou-hot.html">最热</a></li>
-            </ul>
-        </div>
-        <!-- 导购内容 -->
-        <div class="dg-new">
-            <ul class="dg-con">
-                <!-- <li>
-                    <a href="">
-                        <img src="../img/bg3.jpg" alt="">
-                        <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
-                        <div>
-                            <span>3</span>
-                            <span>3</span>
-                        </div>
-                        <div class="dg-fix"></div>
-                    </a>
-                </li> -->
-            </ul>
-        </div>
-        <div class="dg-hot"></div>
+    <!-- 结束 -->
+    <div class="nav-shi">
+        <nav class="nav">
+            <h1>免费试用</h1>
+            <a href="#" class="shi-da" style="border-bottom: 4px red solid; color: #fe5431;" id="drawing-1">大众试用</a>
+            <a href="#" class="shi-da" id="drawing">体验师专享</a>
+        </nav>
     </div>
-    <!-- 点击加载 -->
-    <div id="jiazai">
-        <img src="../img/more.png" alt="">
-        <!-- <img src="./img/loading-icon.gif" alt=""> -->
-        <a href="javaScript:;">点击加载更多</a>
+    <section class="paging">
+        <a href="#" id="apply-3">全部</a>
+        <a href="#" id="apply">申请中</a>
+        <a href="#" id="apply-1">试用中</a>
+        <a href="#" id="apply-2">已结束</a>
+    </section>
+    <section class="goods">
+        <ul id="lis">
+            <!-- <li>
+                <a href="">
+                    <span class="Com-4">首发</span>
+                    <img src="" alt="">
+                    <div class="Commodity">
+                        <h1>巴慕达 The Toaster 烤面包机</h1>
+                        <p class="Com-1">
+                            <span>2023</span>
+                            <span>20台</span>
+                        </p>
+                        <p class="Com-2"><span>3564</span>申请</p>
+                        <p class="Com-3">报告数量： 8</p>
+                    </div>
+
+                </a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li> -->
+
+        </ul>
+
+    </section>
+    <div class="loading-1">
+        <section class="loading">
+            <img src="" alt=""> 点击加载更多
+        </section>
     </div>
-    <!-- 底部 -->
+    <!-- 尾 -->
     <footer>
         <div class="footer">
             <div class="qr footer1">
@@ -132,28 +139,34 @@
             </div>
         </div>
         <div class="jiantou">
-            <img src="../img/back.png" alt="">
+            <img src="./img/back.png" alt="">
         </div>
         <p>&copy2016极果版权所有</p>
     </footer>
+
 </body>
+
+</html>
 <script src="../js/jquery-3.6.0.min.js"></script>
-<script src="../js/daogou.js"></script>
+<script src="./js/shi-index.js"></script>
 <script src="../js/doT.min.js"></script>
-<script id="gd-new" type="text/x-dot-template">
-    {{~it:value:index}}
+<script id="do" type="text/x-dot-template">
+    {{~it:a:index}}
     <li>
-        <a href="../daogo/daogou-li.html">
-            <img src="{{=value.img}}">
-            <p>{{=value.text}}</p>
-            <div>
-                <span>{{=value.like}}</span>
-                <span>{{=value.words}}</span>
+        <a href="./Goods details.html">
+            <span class="Com-4">{{=a.info_ty}}</span>
+            <img src="{{=a.img}}" alt="123" id="ooo">
+            <div class="Commodity">
+                <h1>{{=a.text}}</h1>
+                <p class="Com-1">
+                    <span>{{=a.apply}}</span>
+                    <span>{{=a.num}}台</span>
+                </p>
+                <p class="Com-2"><span>{{=a.totalnum}}</span>申请</p>
+                <p class="Com-3">报告数量： 8</p>
+
             </div>
-            <div class="dg-fix"></div>
         </a>
     </li>
     {{~}}
 </script>
-
-</html>
